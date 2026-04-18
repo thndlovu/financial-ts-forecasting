@@ -246,5 +246,3 @@ if __name__ == "__main__":
     feature_names = list(features.columns)
     target_names  = list(targets.columns)
     save_splits(normalised, PROCESSED_DIR, feature_names, target_names)
-
-    print("\nChunk 2 complete.")
