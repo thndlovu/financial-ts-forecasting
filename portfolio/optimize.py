@@ -143,6 +143,7 @@ def plot_cumulative(test_dates, hist_ret, lstm_ret, spy_ret):
     ax.set_ylabel("Portfolio value (starting at 1.0)")
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %Y"))
     ax.xaxis.set_major_locator(mdates.MonthLocator(interval=2))
+    ax.set_xlim(test_dates.iloc[0], test_dates.iloc[-1])
     ax.legend(fontsize=10)
     ax.grid(axis="y", linewidth=0.3, color="#cccccc")
     fig.tight_layout()
